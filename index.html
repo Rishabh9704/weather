@@ -1,55 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Englebert&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Englebert&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="custom-header">
-        <div class="logo-text">
-            <i class="fa-solid fa-sun weather-symbol"></i>
-            <h1 class="font-englebert">Weather Forecast</h1>
-        </div>
-        <div class="search-container">
-            <input type="text" id="search-location" placeholder="Search for a location">
-            <button id="search-button">Search</button>
-        </div>
-    </header>
-    <main>
-        <section class="current-conditions">
-            <img id="weather-icon" src="sunny.png" alt="Sunny">
-            <p class="font-englebert" id="temperature">33°C</p>
-            <p class="font-englebert" id="description">Hot outside. Feels like temperature is 40°.</p>
-        </section>
-        <section class="hourly-forecast">
-            <h2 class="font-englebert">Hourly Forecast</h2>
-            <div id="hourly-forecast-container"></div>
-        </section>
-        <section class="daily-forecast">
-            <h2 class="font-englebert">Daily Forecast</h2>
-            <div id="daily-forecast-container"></div>
-        </section>
-    </main>
-    <footer>
-        <div class="location-select-container">
-            <select id="location-select">
-                <option value="agra">Agra</option>
-                <option value="delhi">Delhi</option>
-                <option value="mumbai">Mumbai</option>
-                <option value="kolkata">Kolkata</option>
-                <option value="kiratpur">Kiratpur, Uttar Pradesh</option>
-                <option value="gorakhpur">Gorakhpur</option>
-            </select>
-        </div>
-        <p>&copy; 2023 Weather Forecast. All rights reserved.</p>
-        <p id="elapsed-time"></p>
-        <p id="error-message"></p> </footer>
-    <script src="script.js"></script>
+  <header class="custom-header">
+    <div class="logo-text">
+      <i class="fa-solid fa-sun weather-symbol"></i>
+      <h1 class="font-englebert">Weather Forecast</h1>
+    </div>
+    <div class="search-container">
+      <input type="text" id="search-location" placeholder="Search for a location">
+      <button id="search-button">Search</button>
+    </div>
+  </header>
+  <main>
+    <section class="current-conditions">
+      <img id="weather-icon" src="sunny.png" alt="Sunny">
+      <p class="font-englebert" id="temperature">33°C</p>
+      <p class="font-englebert" id="description">Hot outside. Feels like temperature is 40°.</p>
+    </section>
+    <section class="hourly-forecast">
+      <h2 class="font-englebert">Hourly Forecast</h2>
+      <div id="hourly-forecast-container"></div>
+    </section>
+    <section class="daily-forecast">
+      <h2 class="font-englebert">Daily Forecast</h2>
+      <div id="daily-forecast-container"></div>
+    </section>
+  </main>
+  <footer>
+    <div class="location-select-container">
+      <select id="location-select">
+        <option value="agra">Agra</option>
+        <option value="delhi">Delhi</option>
+        <option value="mumbai">Mumbai</option>
+        <option value="kolkata">Kolkata</option>
+        <option value="kiratpur">Kiratpur, Uttar Pradesh</option>
+        <option value="gorakhpur">Gorakhpur</option>
+      </select>
+    </div>
+    <p>&copy; 2023 Weather Forecast. All rights reserved.</p>
+    <p id="elapsed-time"></p>
+    <p id="error-message"></p>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
